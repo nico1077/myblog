@@ -18,3 +18,5 @@ def post(post_id):
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
     return render_template("post.html", post_id=post_id, content=content)
+if __name__ == '__main__':
+    app.run(debug=True)
